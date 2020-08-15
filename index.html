@@ -1,94 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>First webpage</title>
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono$display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
 </head>
 <body>
-<div class="container">
-<div class="intro">
-<img class="profile-picture" src="pic.jpg"/>
-<h1>Savitej Kaur</h1>
-<h3>Web Developer At CitiGroup</h3>
-<p class="quote">{{ Pause and Ponder }}</p>
-</div>
-
-<div class="about-grid">
-<div class="i-am">
-<h3>I am</h3>
-<ul class="about-list">
-<li>A engineer</li>
-<li>A reader</li>
-<li>Hobby cook</li>
-</ul>
-</div>
-<div class="i-like">
-<h3>I like to</h3>
-<ul class="about-list">
-<li>Meet new people</li>
-<li>Play guitar</li>
-<li>Eat Icecream</li>
-</ul>
-</div>
-</div>
-
-<div>
-<h3 class="projects-heading">My Projects</h3>
-<div class="projects-grid">
-<div class="project-image-wrapper">
-<h4>Project 1</h4>
-<img class="project-image" src="project-1.jpg"/>
-</div>
-<div class="project-image-wrapper">
-<h4>Project 2</h4>
-<img class="project-image" src="project-2.jpg"/>
-</div>
-<div class="project-image-wrapper">
-<h4>Project 3</h4>
-<img class="project-image" src="project-3.jpg"/>
-</div>
-<div class="project-image-wrapper">
-<h4>Project 4</h4>
-<img class="project-image" src="project-4.jpg"/>
-</div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <!--a href="#hero"><h1><span>SAVITEJ KAUR</span></h1></a-->
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#projects" data-after="Projects">Sample Work</a></li>
+            <li><a href="#services" data-after="Service">Experience</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
 
 
-</div>
-</div>
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Savitej Kaur <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
 
-<div class="links-and-contact">
-<div class="Links">
-<h3>Links</h3>
-<ul class="links-list">
-<li><a href="https://github.com/savitej">GitHub</a>
-</li>
-<li><a href="https://linkedin.com/in/savitej-kaur-092a0014">LinkedIn</a>
-</li>
-</ul>
-</div>
-</div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+       <img src="https://i.imgur.com/wbisGng.jpg">
+          
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>SharePoint/MS.Net Developer</h2>
+        <p style="text-align:justify">I am Microsoft certified in .Net and SharePoint Administration & Configuration. Areas of expertise in SharePoint 2010/2013/O365 Development/Support, Power Platform, UI design and development in JavaScript, Jquery, Angular, Typescript, Bootstrap, PHP, HTML, CSS, web application development in Asp.Net MVC5, hands-on experience with multiple scripting languages like Power Shell scripting, Shell scripting, designing test cases, test plans, scenarios, scripts, and gained significant experience of working in a Scrum, Agile/DevOps and Waterfall model of development!
+        </p>
+       
+        <h2>Licenses & Certifications
+        </h2>
+        <p style="text-align:justify">Microsoft  certified .NET 70-515
+        <br/>
+        Microsoft SharePoint 2010, Configuring 70-667<br/>
+        Microsoft Certified: Azure Fundamentals<br/>
+        Responsive Web Design Certification<br/>
+        Scrum Foundations Professional Certificate (SFPC)
+        <br/>
+        Scrum Associate Accredited Certification™ (SAAC™)<br/>Certified Kanban Associate (Kanban-ASC™) Certification™
 
-<div>
-<form action="#">
-<label for="email">
-<h4>Email</h4>
-<input type="email" id="email" placeholder="Enter your email"/>
-</label>
-<label for="message">
-<h4>Message</h4>
-<textarea id="message">Your Message</textarea>
-</label>
-<div class="submit-button-wrapper">
-<input type="submit" valid="Send Message" id="submit-button"/></div>
-</form>
-</div>
-</div>
+      </p>
+       
+      
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
 
-<script src="script.js">
-</script>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Samples</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sample 1</h1>
+            <h2>Responsive Web Design</h2>
+            <br/><br/>
+            <p style="background-color:white">
+            <a href="https://github.com/savitej/ResponsiveDesign"><b>Click Here!</b></a></p>
+          </div>
+          <div class="project-img">
+            <img src="https://i.imgur.com/DEgGTDA.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sample 2</h1>
+            <h2>Web Application Vulnerabilities</h2>
+            <br/><br/>
+            <p style="background-color:white">
+            <a href="https://github.com/savitej/ResponsiveDesign"><b>Click Here!</b></a></p>
+          
+          </div>
+          <div class="project-img">
+            <img src="https://i.imgur.com/DEgGTDA.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sample 3</h1>
+            <h2>CSOM PowerShell scripting</h2>
+            <br/><br/>
+            <p style="background-color:white">
+            <a href="https://github.com/savitej/ResponsiveDesign"><b>Click Here!</b></a></p>
+          
+          </div>
+          <div class="project-img">
+            <img src="https://i.imgur.com/DEgGTDA.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sample 4</h1>
+            <h2>SPFx Webparts</h2>
+            <br/><br/>
+            <p style="background-color:white">
+            <a href="https://github.com/savitej/ResponsiveDesign"><b>Click Here!</b></a></p>
+          
+          </div>
+          <div class="project-img">
+            <img src="https://i.imgur.com/DEgGTDA.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sample 5</h1>
+            <h2>Power Platform Samples</h2>
+            <br/><br/>
+            <p style="background-color:white">
+            <a href="https://github.com/savitej/ResponsiveDesign"><b>Click Here!</b></a></p>
+          
+          </div>
+          <div class="project-img">
+            <img src="https://i.imgur.com/DEgGTDA.png" alt="img">
+          </div>
+        </div>
+        
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Sample 6</h1>
+            <h2>ADA Compliant Accessible Web Design
+            </h2>
+            <br/><br/>
+            <p style="background-color:white">
+            <a href="https://github.com/savitej/ResponsiveDesign"><b>Click Here!</b></a></p>
+          
+          </div>
+          <div class="project-img">
+            <img src="https://i.imgur.com/DEgGTDA.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+<!-- Service Section -->
+<section id="services">
+  <div class="services container">
+    <div class="service-top">
+      <h1 class="section-title">Expe<span>r</span>ience</h1>
+      <p>Multiple years of software development/support/maintenance & testing(SDLC, STLC) experience in Banking/Healthcare/Education/Insurance domain!</p>
+    </div>
+    <div class="service-bottom">
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/google-images.png"/>
+          </div>
+        <h2>Application Analyst</h2>
+        <div style="color:rgb(228, 216, 57);font-weight: bold;font-size:large;">Bayshore Healthcare</div>
 
+        <p>Responsible for handling new/change requests of existing IIS hosted SharePoint .Net MVC applications, portal administration, SharePoint 2013 Team/Project/BI sites development/customization, improving the UI/UX of Intranet portal and other SharePoint sites with web responsive design and power plateform, full stack .Net development</p>
+        <br/>
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/google-images.png"/></div>
+        <h2>Technology Analyst</h2>
+        <div style="color:rgb(228, 216, 57);font-weight: bold;font-size:large;">Infosys Ltd</div>
+        <p>Responsible for migrating Lotus Notes/Quickplace/eRoom/SharePoint applications,development of automated web solution using Asp.Net, C#.Net, SQL Server 2008, Azure and Visual Source Safe, SharePoint SSOM, CSOM development, worked as Scrum Lead in the project, automation scripts for DataPower and Splunk teams to create dashboard reports 
+        </p>
+       <br/>
+      </div>
+     </div>
+  </div>
+</section>
+<!-- End Service Section -->
+
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+1 647 939 3513</h2>
+           
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>savitej@gmail.com</h2>
+            
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Toronto, ON, Canada</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/savitej-kaur-092a0014/" target="_blank"><img src="https://img.icons8.com/wired/64/000000/linkedin.png"/>
+          </a></div>
+          <div class="social-item"><a href="https://github.com/savitej" target="_blank"><img src="https://img.icons8.com/dotty/80/000000/github.png"/>
+         </a>
+        </div>
+       
+        </div>
+  
+       
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
 </body>
-
 </html>
